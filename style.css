@@ -311,7 +311,7 @@ nav a {
 }
 
 .skill:nth-child(4) {
-  background: linear-gradient(#ecfcca, #fff);
+  background: linear-gradient(#7eace8, #fff);
 }
 
 .skill:nth-child(1):hover {
@@ -327,7 +327,7 @@ nav a {
 }
 
 .skill:nth-child(4):hover {
-  background: linear-gradient(#d4ee9d, #fff);
+  background: linear-gradient(#525bd1, #fff);
 }
 
 .skill:hover {
