@@ -1,0 +1,745 @@
+/* Import fonts từ Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700;800&family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* body {
+    font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg,
+            #ff9a9e 0%,
+            #fecfef 15%,
+            #ffecd2 30%,
+            #fcb69f 45%,
+            #ff6b6b 60%,
+            #ee5a52 75%,
+            #d63384 90%,
+            #b91c1c 100%); */
+
+    /* Hiệu ứng nền Gradient chính */
+
+
+    /* background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab); */
+
+    /* background: linear-gradient(135deg, #1e30f3 0%, #e21e80 100%); */
+
+    /* background: linear-gradient(125deg,
+            #ff6b6b,
+            /* Đỏ hồng 
+            #ff9a8b,
+            /* Cam nhạt 
+            #fecfef,
+            /* Hồng phấn 
+            #ffda07,
+            /* Vàng 
+            #a8e6cf,
+            /* Xanh bạc hà 
+            #23d5ab,
+            /* Xanh lá cây sáng 
+            #23a6d5,
+            /* Xanh dương 
+            #a1c4fd,
+            /* Xanh da trời nhạt 
+            #c6a9e8,
+            /* Tím Lavender 
+            #e73c7e
+            /* Hồng đậm 
+        ); */
+
+
+    /* background-size: 400% 400%;
+    /* Kích thước của gradient lớn hơn viewport để có thể di chuyển */
+    /* animation: gradient-animation 10s ease infinite; */
+    /* Gọi animation để chạy nền */
+    /* color: #333; */
+    /* Đảm bảo màu chữ mặc định dễ đọc */
+
+    /* min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow-x: hidden; */
+/* } */ 
+
+/* Định nghĩa chuyển động của gradient
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+} */
+
+/* Hiệu ứng nền màu nước */
+/* body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:
+        radial-gradient(circle at 20% 20%, rgba(255, 182, 193, 0.4) 0%, transparent 50%),
+        radial-gradient(circle at 80% 30%, rgba(255, 105, 97, 0.3) 0%, transparent 50%),
+        radial-gradient(circle at 40% 70%, rgba(255, 192, 203, 0.5) 0%, transparent 50%),
+        radial-gradient(circle at 70% 80%, rgba(220, 20, 60, 0.3) 0%, transparent 50%),
+        radial-gradient(circle at 10% 60%, rgba(255, 20, 147, 0.4) 0%, transparent 50%);
+    filter: blur(40px);
+    animation: watercolor 20s ease-in-out infinite alternate;
+    z-index: -2;
+} */
+
+/* === CSS CHO NỀN ĐỘNG ĐA PHIÊN BẢN === */
+
+/* --- 1. NỀN MẶC ĐỊNH CHO MÀN HÌNH LỚN (DESKTOP-FIRST) --- */
+body {
+    font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* 
+     * Nền gradient chảy màu SÁNG NHẠT cho desktop.
+     * Các màu được chọn để tạo cảm giác nhẹ nhàng, chuyên nghiệp.
+    */
+    background: linear-gradient(125deg, 
+        #fde6e6, /* Hồng rất nhạt */
+        #e9e7fd, /* Tím rất nhạt */
+        #d8f5fa, /* Xanh dương rất nhạt */
+        #fff4e0  /* Cam rất nhạt */
+    );
+    background-size: 400% 400%;
+    animation: GentleFlow 25s ease-in-out infinite;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow-x: hidden;
+    transition: linear-gradient 0.5s ease; /* Thêm transition để chuyển nền mượt hơn */
+}
+
+@keyframes GentleFlow {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+
+/* --- 2. THAY ĐỔI NỀN CHO MÀN HÌNH NHỎ (MOBILE) --- */
+/* Áp dụng các quy tắc này khi chiều rộng màn hình từ 992px trở xuống */
+@media (max-width: 992px) {
+    body {
+        /* 
+         * Ghi đè bằng nền gradient ĐẬM và RỰC RỠ hơn cho mobile.
+         * Đây là mã gradient gốc của bạn.
+        */
+        background: linear-gradient(135deg,
+            #ff9a9e 0%,
+            #fecfef 15%,
+            #ffecd2 30%,
+            #fcb69f 45%,
+            #ff6b6b 60%,
+            #ee5a52 75%,
+            #d63384 90%,
+            #b91c1c 100%);
+        background-size: 600% 600%; /* Giữ nguyên kích thước và animation của nền đậm */
+        /* animation: RainbowFlow 20s ease-in-out infinite; */
+    }
+
+    /* Keyframe cho nền đậm (có thể đã có, nếu chưa thì thêm vào) */
+    @keyframes RainbowFlow {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
+    }
+}
+
+
+/* --- 3. LỚP PHỦ VÀ HIỆU ỨNG GIẤY (Giữ nguyên) --- */
+/* Hiệu ứng màu nước và giấy nhám vẫn áp dụng cho cả hai nền */
+body::before {
+    content: '';
+    position: fixed;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background:
+        radial-gradient(circle at 20% 20%, rgba(255, 182, 193, 0.2) 0%, transparent 50%),
+        radial-gradient(circle at 80% 30%, rgba(255, 105, 97, 0.15) 0%, transparent 50%);
+    filter: blur(40px);
+    animation: watercolor 5s ease-in-out infinite alternate;
+    z-index: -2;
+}
+
+/* Hiệu ứng giấy nhám */
+body::after {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><defs><filter id="roughpaper" x="0%" y="0%" width="100%" height="100%"><feTurbulence result="noise" baseFrequency="0.04" numOctaves="5" seed="1"/><feDiffuseLighting in="noise" lighting-color="white" surfaceScale="1"><feDistantLight azimuth="45" elevation="60"/></feDiffuseLighting></filter></defs><rect width="100%" height="100%" filter="url(%23roughpaper)" opacity="0.03"/></svg>') repeat;
+    z-index: -1;
+}
+
+@keyframes watercolor {
+    0% {
+        filter: blur(40px) hue-rotate(0deg);
+        transform: scale(1);
+    }
+
+    50% {
+        filter: blur(50px) hue-rotate(10deg);
+        transform: scale(1.05);
+    }
+
+    100% {
+        filter: blur(35px) hue-rotate(-10deg);
+        transform: scale(1.02);
+    }
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.left-section {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(25px);
+    border-radius: 35px;
+    padding: 52px;
+    box-shadow: 0 30px 60px rgba(220, 38, 38, 0.15), 0 8px 25px rgba(0, 0, 0, 0.08), inset 0 1px 0 rgba(255, 255, 255, 0.6);
+    border: 2px solid rgba(255, 182, 193, 0.3);
+    position: relative;
+    overflow: hidden;
+}
+
+.left-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 8px;
+    background: linear-gradient(90deg, #ff6b6b 0%, #ff8a80 25%, #ff5722 50%, #e91e63 75%, #d63384 100%);
+    border-radius: 35px 35px 0 0;
+}
+
+.left-section::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -50%;
+    width: 200%;
+    height: 200%;
+    background: conic-gradient(from 0deg, transparent, rgba(255, 182, 193, 0.08), transparent);
+    animation: rotate 15s linear infinite;
+    z-index: -1;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.right-section {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(25px);
+    border-radius: 35px;
+    padding: 52px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.right-section::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+    animation: shine 6s ease-in-out infinite;
+}
+
+@keyframes shine {
+    0% {
+        transform: translateX(-100%) translateY(-100%) rotate(45deg);
+    }
+
+    100% {
+        transform: translateX(100%) translateY(100%) rotate(45deg);
+    }
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 32px;
+}
+
+.logo h1 {
+    font-size: 28px;
+    font-weight: 800;
+    font-family: 'Fredoka', 'Segoe UI', sans-serif;
+    background: linear-gradient(45deg, #2d3748, #4a5568, #1a202c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.main-title {
+    position: relative;
+    /* Bắt buộc để định vị icon */
+    display: inline-block;
+    /* Giúp khối bao vừa vặn với chữ */
+    padding-right: 35px;
+    /* Tạo không gian cho icon */
+}
+
+.main-title::after {
+    content: '🛠️';
+    /* Hoặc bạn có thể dùng '✨', '💻' */
+    font-size: 24px;
+    /* Điều chỉnh kích thước icon */
+    position: absolute;
+    /* Định vị tuyệt đối so với .main-title */
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    /* Căn giữa icon theo chiều dọc */
+    animation: pulse-glow 3s ease-in-out infinite;
+    /* Thêm hiệu ứng lấp lánh nếu muốn */
+}
+
+.subtitle {
+    font-size: 16px;
+    color: #64748b;
+    margin-bottom: 32px;
+    line-height: 1.6;
+    font-weight: 500;
+}
+
+.instruction,
+.warning {
+    border-radius: 18px;
+    padding: 24px;
+    margin-bottom: 24px;
+    position: relative;
+    border-left: 6px solid;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.instruction {
+    background: linear-gradient(135deg, #fef2f2 0%, #fdf2f8 100%);
+    border-left-color: #ef4444;
+}
+
+.warning {
+    background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+    border-left-color: #f59e0b;
+}
+
+.instruction h3,
+.warning h3 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 12px;
+    font-family: 'Quicksand', 'Segoe UI', sans-serif;
+}
+
+.instruction h3 {
+    color: #dc2626;
+}
+
+.warning h3 {
+    color: #92400e;
+}
+
+.instruction p,
+.warning p {
+    font-size: 15px;
+    line-height: 1.6;
+    margin: 0;
+    font-weight: 500;
+}
+
+.instruction p {
+    color: #991b1b;
+}
+
+.warning p {
+    color: #78350f;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    padding: 18px 36px;
+    border: none;
+    border-radius: 20px;
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    text-decoration: none;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    position: relative;
+    overflow: hidden;
+    font-family: 'Quicksand', 'Segoe UI', sans-serif;
+}
+
+.btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+    transition: left 0.6s ease;
+}
+
+.btn:hover::before {
+    left: 100%;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, #ff6b6b 0%, #ff8a80 25%, #e91e63 50%, #d63384 100%);
+    color: white;
+    box-shadow: 0 10px 30px rgba(255, 107, 107, 0.4);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.btn-primary:hover {
+    transform: translateY(-4px) scale(1.05);
+    box-shadow: 0 15px 40px rgba(255, 107, 107, 0.6);
+}
+
+.footer {
+    margin-top: 32px;
+    padding-top: 24px;
+    border-top: 2px solid rgba(255, 182, 193, 0.3);
+    font-size: 14px;
+    color: #64748b;
+    font-weight: 600;
+}
+
+.footer ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.footer li {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.footer li a:hover {
+    color: #d63384;
+}
+
+.anime-illustration {
+    width: 280px;
+    height: 280px;
+    margin-bottom: 40px;
+    background: linear-gradient(135deg, #ff6b6b 0%, #ff8a80 25%, #e91e63 50%, #d63384 75%, #b91c1c 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 30px 60px rgba(255, 107, 107, 0.4), 0 10px 30px rgba(233, 30, 99, 0.3), inset 0 5px 0 rgba(255, 255, 255, 0.2);
+    animation: anime-float 4s ease-in-out infinite;
+    position: relative;
+    overflow: hidden;
+    border: 4px solid rgba(255, 255, 255, 0.3);
+    padding: 8px;
+}
+
+.anime-illustration img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+@keyframes anime-float {
+
+    0%,
+    100% {
+        transform: translateY(0px) rotate(0deg);
+    }
+
+    50% {
+        transform: translateY(-15px) rotate(5deg);
+    }
+}
+
+.right-section h3 {
+    font-size: 28px;
+    font-weight: 800;
+    margin-bottom: 20px;
+    font-family: 'Fredoka', 'Segoe UI', sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.right-section p {
+    font-size: 16px;
+    margin-bottom: 36px;
+    opacity: 0.95;
+    line-height: 1.6;
+    font-weight: 500;
+}
+
+.feature-list {
+    list-style: none;
+    margin-bottom: 32px;
+    padding-left: 0;
+}
+
+.feature-list li {
+    margin-bottom: 20px;
+}
+
+.feature-list li a {
+    transition: transform 0.3s ease;
+}
+
+.feature-list li a:hover {
+    transform: scale(1.1) translateX(10px);
+}
+
+.feature-list span {
+    font-weight: 600;
+    font-size: 16px;
+}
+
+/* Hiệu ứng hạt bay */
+.particles {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.particle {
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    background: rgba(255, 107, 107, 0.6);
+    border-radius: 50%;
+    animation: float-particle 15s linear infinite;
+}
+
+@keyframes float-particle {
+    0% {
+        transform: translateY(100vh) rotate(0deg);
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 1;
+    }
+
+    90% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(-100vh) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+/* Responsive cho di động */
+@media (max-width: 992px) {
+
+    /* Thay đổi breakpoint để bố cục 1 cột sớm hơn */
+    .container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 16px;
+    }
+
+    .left-section,
+    .right-section {
+        padding: 32px 24px;
+    }
+
+    .main-title {
+        font-size: 28px;
+    }
+
+    .anime-illustration {
+        width: 180px;
+        height: 180px;
+    }
+
+    .right-section {
+        order: -1;
+    }
+
+    /* Đưa cột phải lên đầu trên di động */
+    .right-section h3 {
+        font-size: 24px;
+    }
+}
+
+
+/* === CSS CHO NÚT CHUYỂN NGÔN NGỮ === */
+.language-switcher-container {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.language-switcher {
+    position: relative;
+    display: inline-block;
+}
+
+.language-switcher .current-flag {
+    cursor: pointer;
+}
+
+.language-switcher .current-flag img {
+    width: 38px;
+    height: auto;
+    border-radius: 8px;
+    border: 2px solid rgba(255, 255, 255, 0.7);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.language-switcher .current-flag:hover img {
+    transform: scale(1.1);
+}
+
+.language-dropdown {
+    display: none;
+    position: absolute;
+    top: 120%;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+    padding: 8px;
+    z-index: 1100;
+    width: 180px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out;
+    pointer-events: none;
+}
+
+.language-dropdown.show {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+
+.language-dropdown a {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #4A5568;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 8px;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.language-dropdown a:hover {
+    background-color: rgba(255, 107, 107, 0.2);
+    color: #d63384;
+}
+
+.language-dropdown img {
+    width: 24px;
+    margin-right: 12px;
+    border-radius: 3px;
+}
+
+/* === CSS CHO HIỆU ỨNG ICON NHẤP NHÁY === */
+
+/* Áp dụng animation cho tất cả các icon có class .animated-icon */
+.animated-icon {
+    display: inline-block;
+    /* Bắt buộc để transform hoạt động */
+    animation: pulse-glow 3s ease-in-out infinite;
+    /* Gán một độ trễ khác nhau cho mỗi icon để chúng không nháy cùng lúc */
+}
+
+.feature-list li:nth-child(1) .animated-icon {
+    animation-delay: 0s;
+}
+
+.feature-list li:nth-child(2) .animated-icon {
+    animation-delay: 0.5s;
+}
+
+.feature-list li:nth-child(3) .animated-icon {
+    animation-delay: 1s;
+}
+
+.feature-list li:nth-child(4) .animated-icon {
+    animation-delay: 1.5s;
+}
+
+
+/* Keyframes animation (có thể dùng lại từ code cũ nếu có) */
+@keyframes pulse-glow {
+
+    0%,
+    100% {
+        transform: scale(1);
+        filter: drop-shadow(0 2px 4px rgba(220, 38, 38, 0.3));
+    }
+
+    50% {
+        transform: scale(1.2);
+        /* Tăng độ nảy lên một chút */
+        filter: drop-shadow(0 4px 12px rgba(220, 38, 38, 0.5));
+    }
+}

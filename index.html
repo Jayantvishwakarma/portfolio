@@ -1,193 +1,580 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
+<html lang="vi">
+
+<head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Jayant Vishwakarma - My portfolio</title>
-    <meta name="title" content="Jayant Vishwakarma - My portfolio" />
-    <meta
-      name="description"
-      content="Hello, I'm Jayant Vishwakarma - a first year MCA student and aspiring web developer. I also make programming posts on instagram channel Developer_jayant"
-    />
-    <meta
-      name="keywords"
-      content="developer, jayantvishwakarma, Developer jayant, Jayant dev, developer_jayant portfolio, jayant portfolio, jayant vishwakarma portfolio"
-    />
-    <meta name="robots" content="index, follow" />
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="language" content="English" />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="./images/favicon/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./images/favicon/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="./images/favicon/favicon-16x16.png"
-    />
-    <link rel="manifest" href="./images/favicon/site.webmanifest" />
-    <link rel="stylesheet" href="style.css" />
-    <script type="text/javascript" src="./index.js" defer></script>
-    <link
-      href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <nav class="navbar">
-      <a class="logo-link" href="">
-        <span class="logo"
-          ><span class="logo-item1">J</span
-          ><span class="logo-item2">V</span></span
-        >
-      </a>
-      <a class="home active" href="#home">Home</a>
-      <a class="skills" href="#skills">Skills</a>
-      <a class="projects" href="#projects">Projects</a>
-    </nav>
-    <section id="home">
-      <h1 class="big-heading">
-        HI! I AM <br />
-        JAYANT VISHWAKARMA
-      </h1>
-      <h2 class="profession">FRONT-END DEVELOPER</h2>
-      <div class="about-section">
-        <img src="images/other/profile1.jpg" class="profile" alt="my-image" />
-        <div class="about-me">
-          <h2 class="about-heading">ABOUT ME</h2>
-          <p class="bio">
-            Hey, I'm Jayant Front-end Developer , and I specialise in bulding graphic design ,JS ,CSS ,HTML projects that just work across all platfroms and browsers.
-          </p>
-          <div class="socials">
-            <span class="social-img"
-              ><a href="https://github.com/jayantvishwakarma" target="_blank"
-                ><img src="./images/icons/github.svg" alt="" /></a></span
-            ><span class="social-img">
-              <a href="https://www.instagram.com/developer_jayant/" target="_blank"
-                ><img src="./images/icons/instagram.svg" alt=""
-              /></a> </span
-            ><span class="social-img">
-              <a href="https://www.youtube.com/@dev_jayant" target="_blank"
-                ><img src="./images/icons/youtube.svg" alt=""
-              /></a> </span
-            ><span class="social-img">
-              <a href="https://www.linkedin.com/in/jayant-vishwakarma-21030825a/" target="_blank"
-                ><img src="./images/icons/linkedin.svg" alt=""
-              /></a>
-            </span>
-          </div>
+    <!-- TIÊU ĐỀ MỚI -->
+    <title>Jayant Vishwakarma - Web Developer</title>
+    <!-- THAY ICON MỚI (NẾU CÓ) -->
+    <link rel="icon" type="image/png" href="assets/my_image.jpeg" />
+
+    <!-- THÊM FONT MỚI TỪ GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- LINK CSS VÀ FONT AWESOME -->
+    <link rel="stylesheet" href="css/new-version.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+    <!-- Thanh tiến trình cuộn giữ nguyên -->
+    <div class="scroll-progress-bar"></div>
+
+    <header class="main-header">
+        <!-- Nhóm 1: Logo -->
+        <a class="logo" href="index.html"><span>Jayant Vishwakamra</span></a>
+
+        <!-- Nhóm 2: Khối điều hướng -->
+        <div class="header-navigation"> <!-- THÊM THẺ NÀY -->
+            <nav class="main-nav">
+                <a href="#hero">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <!-- <a href="#coding-activity">Activity</a> -->
+                <a href="#projects">Projects</a>
+                <a href="#experience">Experience</a>
+                <a href="#contact">Contact</a>
+                <span class="nav-indicator"></span>
+            </nav>
+            <a href="assets/resume/jayant vishwakarma.pdf" class="resume-button" download>Resume</a>
+        </div> <!-- THÊM THẺ NÀY -->
+
+    </header>
+
+    <main>
+        <!-- ====================================================== -->
+        <!-- Section 1: Hero (THAY ĐỔI LỚN) -->
+        <!-- ====================================================== -->
+        <section id="hero" class="hero-section">
+            <div class="hero-background"></div>
+            <div class="container hero-container">
+                <!-- Profile Card (bên trái) -->
+                <div class="profile-card-container animate-on-scroll">
+                    <div class="profile-card glass-card">
+                        <div class="profile-header">
+                            <div class="avatar-wrapper">
+                                <img src="assets/my_image.jpeg" alt="Avatar" class="avatar" />
+                                <div class="status-indicator online"></div>
+                            </div>
+                            <div class="profile-info">
+                                <h3>Jayant Vishwakamra</h3>
+                                <p class="job-title">Full-stack Web Developer</p>
+                            </div>
+                        </div>
+                        <div class="profile-details">
+                            <p><i class="fas fa-map-marker-alt"></i> Sagar,(M.P.)</p>
+                            <p><i class="fas fa-calendar-alt"></i> Joined 2023</p>
+                            <p><i class="fas fa-briefcase"></i> Bansal Institute of Science & Technology</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Hero Text Content (ở giữa) -->
+                <div class="hero-text-content">
+                    <div class="welcome-badge animate-on-scroll">Welcome to my Portfolio</div>
+                    <h1 class="animate-on-scroll">
+                        Innovating with AI & Web Technologies<br>
+                        <span class="gradient-text">Experiences</span>
+                    </h1>
+                    <p style="color: white;" class="animate-on-scroll">AI & Web Development enthusiast,
+                         focused on designing innovative, real-world solutions that enhance user experience and scalability.</p>
+                    <div class="hero-buttons animate-on-scroll">
+                        <a href="#projects" class="btn btn-primary">View my projects <i
+                                class="fas fa-arrow-right"></i></a>
+                        <a href="#contact" class="btn btn-secondary">Get in touch</a>
+                    </div>
+                    <div class="social-links animate-on-scroll">
+                        <a style="color: white;" href="https://linkedin.com/in/jayant-vishwakarma" aria-label="LinkedIn"><i
+                                class="fab fa-linkedin-in"></i></a>
+                        <a style="color: white;" href="https://github.com/jayantvishwakarma" aria-label="GitHub"><i
+                                class="fab fa-github"></i></a>
+                        <a style="color: white;" href="mailto:vishwakarmajayant0@gmail.com" aria-label="Email"><i
+                                class="fas fa-envelope"></i></a>
+                        <a style="color: white;" href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-down-indicator"></div>
+        </section>
+
+        <!-- ====================================================== -->
+        <!-- Music Player Widget -->
+        <!-- ====================================================== -->
+        <div class="music-player-widget">
+            <img src="assets/song-cover.jpg" alt="Song Cover" class="song-cover" id="song-cover">
+            <div class="song-info">
+                <h4 id="song-title">Điều chưa nói</h4>
+                <p id="song-artist">Tia ft. OMIXX</p>
+            </div>
+            <div class="player-controls">
+                <!-- Thêm ID cho các nút -->
+                <i class="fas fa-backward-step" id="prev-btn"></i>
+                <i class="fas fa-pause" id="play-pause-btn"></i> <!-- Bắt đầu với icon pause -->
+                <i class="fas fa-forward-step" id="next-btn"></i>
+            </div>
+            <i class="fas fa-volume-high"></i> <!-- Phần volume sẽ làm sau nếu bạn muốn -->
         </div>
-      </div>
-      <div class="scroll">
-        <img src="./images/icons/down-arrow.svg" alt="" />
-      </div>
-    </section>
-    <section id="skills">
-      <h1 class="section-heading">Skills</h1>
-      <div class="skill-container">
-        <div class="skill">
-          <div class="skill-img">
-            <img src="./images/icons/html5.png" alt="" />
-            <img src="./images/icons/css3.png" alt="" />
-          </div>
-          <div class="skill-heading">HTML & CSS</div>
-          <div class="skill-detail">
-            COMFORTABLE WITH FLEXBOX, GRID, ANIMATION AND RESPONSIVE DESIGN
-          </div>
+
+        <!-- ====================================================== -->
+        <!-- Section 2: About Me (CẬP NHẬT) -->
+        <!-- ====================================================== -->
+        <section id="about" class="content-section">
+            <div class="container">
+                <div class="section-header animate-on-scroll">
+                    <div class="section-badge">My personal story</div>
+                    <h2 class="section-title">About Me</h2>
+                    <div class="title-underline"></div>
+                </div>
+                <div class="about-grid">
+                    <div class="about-image-wrapper animate-on-scroll">
+                        <img src="assets/my_image.png" alt="A pensive anime character in a snowy city scene">
+                        <div class="status-tag">
+                            <span class="green-dot"></span> Available for work
+                        </div>
+                    </div>
+                    <div class="about-text-content animate-on-scroll">
+                        <p>Hey there! I'm currently pursuing my MCA, but honestly, the real learning happens when you
+                             build stuff that people actually use. Started with the basics of coding and gradually worked my
+                              way up to building modern web apps with Next.js, React.js, and TailwindCSS.</p>
+                        <P>
+                            After working on various projects, I've realized that great code isn't just about writing clean lines 
+                            - it's about really understanding what people need and finding smart ways to solve their problems. Right now,
+                             I'm diving deep into AI, ML, and agent-based projects because I believe they're the future of building better solutions.
+
+                        </P>      
+                        <p>I love creating solutions that actually scale and work well in the real world. 
+                            Every project teaches me something new about user experience and how to turn complex problems into elegant, simple solutions.</p>
+                        <div class="info-box-wrapper glass-card">
+                            <div class="info-box">
+                                <div>
+                                    <span class="info-label">Name</span>
+                                    <p>Jayant Vishwakarma</p>
+                                </div>
+                                <div>
+                                    <span class="info-label">Email</span>
+                                    <p>vishwakarmajayant0@gmail.com</p>
+                                </div>
+                                <div>
+                                    <span class="info-label">Location</span>
+                                    <p>Sagar, (M.P.)</p>
+                                </div>
+                                <div>
+                                    <span class="info-label">Availability</span>
+                                    <p class="available-status">Open to Work</p>
+                                </div>
+                            </div>
+                            <a href="assets/resume/jayant vishwakarma.pdf" download
+                                class="btn-download-resume">Download Resume <i class="fas fa-download"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ====================================================== -->
+        <!-- Section 3: Skills (CẬP NHẬT) -->
+        <!-- ====================================================== -->
+        <section id="skills" class="content-section">
+            <div class="container">
+                <div class="section-header animate-on-scroll">
+                    <!-- Thêm lại badge "My Skills" -->
+                    <div class="section-badge">My Skills</div>
+                    <!-- Đổi tiêu đề -->
+                    <h2 class="section-title">Technical Stack</h2>
+                    <div class="title-underline"></div>
+                </div>
+
+                <div class="skills-wrapper">
+                    <div class="skills-grid">
+                        <!-- JavaScript sẽ tự động chèn các thanh kỹ năng vào đây -->
+                        <p class="skills-loading">
+                            <i class="fas fa-spinner fa-spin"></i> Loading technical skills...
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ====================================================== -->
+        <!-- Section 3.2: Skills (PHIÊN BẢN NÂNG CẤP VỚI LƯỚI TƯƠNG TÁC) -->
+        <!-- ====================================================== -->
+        <section id="skills" class="content-section">
+            <div class="container">
+                <!-- Sử dụng lại cấu trúc header chuẩn của trang bạn -->
+                <div class="section-header animate-on-scroll">
+                    <div class="section-badge">My Expertise</div>
+                    <h2 class="section-title">My Skills</h2>
+                    <div class="title-underline"></div>
+                </div>
+
+                <!-- Bắt đầu nội dung mới được tích hợp -->
+                <div class="row gx-5 justify-content-center">
+                    <div class="col-lg-11 col-xl-10"> <!-- Điều chỉnh cột để vừa vặn hơn -->
+                        <div class="card glass-card animate-on-scroll" style="border: none; padding: 2.5rem;">
+                            <!-- Phần 1: Kỹ năng chuyên môn và Kỹ năng mềm -->
+                            <div class="mb-5">
+                                <!-- <div class="d-flex align-items-center justify-content-center mb-4">
+                                    <div class="feature-icon">
+                                        <i class="fas fa-tools"></i>
+                                    </div>
+                                    <h3 class="fw-bolder mb-0"><span class="gradient-text d-inline">Professional
+                                            Skills</span></h3>
+                                </div> -->
+
+                                <h4 class="skills-subtitle">General Expertise</h4>
+                                <div class="interactive-grid-container mb-4">
+                                    <div class="interactive-grid">
+                                        <div class="grid-item" data-text="Web Technologies">Web Development</div>
+                                        <div class="grid-item" data-text="Backend Technologies">Backend Development</div>
+                                        
+                                    </div>
+                                </div>
+
+                                <h4 class="skills-subtitle">Soft Skills</h4>
+                                <div class="interactive-grid-container mb-4">
+                                    <div class="interactive-grid">
+                                        <div class="grid-item" data-text="Problem Solving">Problem Solving</div>
+                                        <div class="grid-item" data-text="Team Collaboration">Teamwork</div>
+                                        <div class="grid-item" data-text="Effective Communication">Communication</div>
+                                        <div class="grid-item" data-text="Adaptability & Learning">Adaptability</div>
+                                        <div class="grid-item" data-text="Attention to Detail">Attention to Detail</div>
+                                        <div class="grid-item" data-text="Time Management">Time Management</div>
+                                    </div>
+                                </div>
+
+                                <h4 class="skills-subtitle">Tools</h4>
+                                <div class="interactive-grid-container mb-4">
+                                    <div class="interactive-grid">
+                                        <div class="grid-item" data-text="Development IDE">VSCode</div>
+            
+                                        <div class="grid-item" data-text="Version Control">Git & GitHub</div>
+                                    </div>
+                                </div>
+
+                                <h4 class="skills-subtitle">Design Software</h4>
+                                <div class="interactive-grid-container">
+                                    <div class="interactive-grid">
+                                        <div class="grid-item" data-text="UI/UX Prototyping">Figma</div>
+                                        <div class="grid-item" data-text="Graphic Creation">Canva</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+       
+        <!-- ====================================================== -->
+        <!-- Section 4: Featured Works (NEW ALTERNATING LAYOUT) -->
+        <!-- ====================================================== -->
+        <section id="projects" class="content-section">
+            <div class="container">
+                <div class="section-header animate-on-scroll">
+                    <div class="section-badge">Some of my recent work</div>
+                    <h2 class="section-title">Featured Projects</h2>
+                    <div class="title-underline"></div>
+                </div>
+
+                <!-- PROJECT 1: Omacha Shop (Layout: Image Left, Details Right) -->
+                <div class="project-showcase-grid animate-on-scroll">
+                    <div class="showcase-card">
+                        <div class="showcase-header"><span>Omacha Project</span></div>
+                        <div class="showcase-content">
+                            <div class="text-features">
+                                <h1>OMACHA SHOP<br>E-COMMERCE</h1>
+                                <h4 class="feature-title">FEATURES</h4>
+                                <ul>
+                                    <li>Full-stack e-commerce platform built with PHP & MySQL.</li>
+                                    <li>Robust admin panel for product, order, and user management.</li>
+                                    <li>Responsive design ensuring a seamless experience on all devices.</li>
+                                </ul>
+                            </div>
+                            <div class="image-gallery">
+                                <img src="assets/omacha/Home1.jpg" alt="Omacha Homepage" class="showcase-img">
+                                <!-- <img src="assets/omacha/product.jpg" alt="Omacha Homepage" class="showcase-img"> -->
+                                <img src="assets/omacha/product_detail.jpg" alt="Omacha Homepage" class="showcase-img">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="details-column">
+                        <h2>Omacha Shop</h2>
+                        <p class="project-category">Web, E-commerce, Full-stack</p>
+                        <div class="project-tags">
+                            <span>PHP</span><span>MySQL</span><span>JavaScript</span><span>Bootstrap</span>
+                        </div>
+                        <div class="description-box glass-card">
+                            <p>A comprehensive toy e-commerce platform designed for a fun shopping experience and
+                                powerful admin tools.</p>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/TranHuuDat2004/Omacha_Shop" target="_blank"
+                                aria-label="GitHub"><i class="fab fa-github"></i></a>
+                            <a href="https://tranhuudat2004.github.io/Omacha-Shop-Demo/" aria-label="Project Details"><i
+                                    class="fas fa-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PROJECT 2: BrickShop (Layout: Details Left, Image Right) -->
+                <div class="project-showcase-grid layout-reversed animate-on-scroll">
+                    <div class="showcase-card">
+                        <div class="showcase-header"><span>BrickShop Project</span></div>
+                        <div class="showcase-content">
+                            <div class="text-features">
+                                <h1>BRICKSHOP<br>E-COMMERCE</h1>
+                                <h4 class="feature-title">FEATURES</h4>
+                                <ul>
+                                    <li>Modern e-commerce hub developed with Node.js and Express.js.</li>
+                                    <li>Sleek and efficient admin UI built with Tailwind CSS.</li>
+                                    <li>Focus on modern JavaScript stack and non-relational databases.</li>
+                                </ul>
+                            </div>
+                            <div class="image-gallery">
+                                <img src="assets/brickshop/homepage.png" alt="BrickShop Homepage" class="showcase-img">
+                                <img src="assets/brickshop/admin_dashboard.png" alt="BrickShop Homepage" class="showcase-img">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="details-column">
+                        <h2>BrickShop</h2>
+                        <p class="project-category">Web, E-commerce, Node.js</p>
+                        <div class="project-tags"><span>Node.js</span><span>Express.js</span><span>TailwindCSS</span>
+                        </div>
+                        <div class="description-box glass-card">
+                            <p>A modern e-commerce hub for building block fans, developed with Node.js and a Tailwind
+                                CSS admin UI.</p>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/TranHuuDat2004/BrickShop" target="_blank" aria-label="GitHub"><i
+                                    class="fab fa-github"></i></a>
+                            <a href="brickshop.html" aria-label="Project Details"><i class="fas fa-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PROJECT 3: ANIME.TV (Layout: Image Left, Details Right) -->
+                <div class="project-showcase-grid animate-on-scroll">
+                    <div class="showcase-card">
+                        <div class="showcase-header"><span>ANIME.TV Project</span></div>
+                        <div class="showcase-content">
+                            <div class="text-features">
+                                <h1>ANIME.TV<br>STREAMING SITE</h1>
+                                <h4 class="feature-title">FEATURES</h4>
+                                <ul>
+                                    <li>Personal project inspired by Crunchyroll, built with pure JavaScript.</li>
+                                    <li>Dynamic user experience for browsing and discovering anime.</li>
+                                    <li>Demonstrates strong front-end skills with vanilla JS, HTML, and CSS.</li>
+                                </ul>
+                            </div>
+                            <div class="image-gallery">
+                                <img src="assets/anime.tv/main-page-spy.PNG" alt="ANIME.TV Homepage"
+                                    class="showcase-img">
+                                    <img src="assets/anime.tv/anime-detail.PNG" alt="ANIME.TV Homepage"
+                                    class="showcase-img">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="details-column">
+                        <h2>ANIME.TV</h2>
+                        <p class="project-category">Web, Streaming, Front-end</p>
+                        <div class="project-tags"><span>JavaScript</span><span>HTML5</span><span>CSS3</span></div>
+                        <div class="description-box glass-card">
+                            <p>A personal project inspired by Crunchyroll, built with pure JavaScript for a dynamic user
+                                experience.</p>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/TranHuuDat2004/anime.tv" target="_blank" aria-label="GitHub"><i
+                                    class="fab fa-github"></i></a>
+                            <a href="https://tranhuudat2004.github.io/anime.tv/" target="_blank"
+                                aria-label="Live Demo"><i class="fas fa-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+       
+
+        <!-- ====================================================== -->
+        <!-- Section 6: Experience (ĐÃ CẬP NHẬT CHO BẠN) -->
+        <!-- ====================================================== -->
+        <section id="experience" class="content-section">
+            <div class="container">
+                <div class="section-header animate-on-scroll">
+                    <div class="section-badge">My professional journey</div>
+                    <h2 class="section-title">Experience & Education</h2>
+                    <div class="title-underline"></div>
+                </div>
+                <div class="timeline">
+                    <!-- Timeline Item 1: Học vấn -->
+                    <div class="timeline-item animate-on-scroll">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-card">
+                            <h3>LetsUpgrade Student Ambassador</h3>
+                            <p class="timeline-meta">LetsUpgrade  | May 2025 - Aug 2025</p>
+                            <p>LetsUpgrade in college by promoting tech bootcamps, workshops, and hackathons.
+                               Built and engaged a community of 200+ students, increasing participation in online learning events.
+                               Organized webinars and info sessions, improving peer awareness of latest technologies.
+                               Earned recognition and reward points for active contribution in community growth.</p>
+                        </div>
+                    </div>
+
+
+                    <!-- Timeline Item 2: Kinh nghiệm làm việc -->
+                    <div class="timeline-item animate-on-scroll">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-card">
+                            <h3>Master of Computer Applications (MCA)</h3>
+                            <p class="timeline-meta">Bansal Institute of Science & Technology, Bhopal | 2023 - 2025</p>
+                            <p>Specialized in advanced computer applications, cloud computing, and AI concepts while strengthening expertise in full-stack web development.</p>
+                        </div>
+                    </div>
+                    <!-- Timeline Item 3: Dự án cá nhân -->
+                    <div class="timeline-item animate-on-scroll">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-card">
+                            <h3>Personal Project Development</h3>
+                            <p class="timeline-meta">GitHub | 2023 - Present</p>
+                            <p>Continuously developing full-stack applications and interactive tools to sharpen my
+                                skills and explore new technologies.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item animate-on-scroll">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-card">
+                            <h3>Bachelor of Computer Applications (BCA)</h3>
+                            <p class="timeline-meta">Dr. Harisingh Gour Vishwavidyalaya, Sagar (M.P.) | 2019 - 2022</p>
+                            <p>Built a strong foundation in computer science, algorithms, and hands-on exposure to databases and programming fundamentals., while maintaining a GPA of 6.9/10.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ====================================================== -->
+        <!-- Section 7: Contact (ĐÃ CẬP NHẬT CHO BẠN) -->
+        <!-- ====================================================== -->
+        <section id="contact" class="content-section">
+            <div class="container">
+                <div class="section-header animate-on-scroll">
+                    <div class="section-badge">Let's work together</div>
+                    <h2 class="section-title">Get In Touch</h2>
+                    <div class="title-underline"></div>
+                </div>
+                <div class="contact-grid">
+                    <div class="contact-info-wrapper glass-card animate-on-scroll">
+                        <h3>Contact Information</h3>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <span>Email</span>
+                                <a href="mailto:vishwakarmajayant0@gmail.com">vishwakarmajayant0@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-linkedin"></i>
+                            <div>
+                                <span>LinkedIn</span>
+                                <a href="https://linkedin.com/in/jayant-vishwakarma"
+                                    target="_blank">linkedin.com/in/jayant-vishwakarma</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-github"></i>
+                            <div>
+                                <span>GitHub</span>
+                                <a href="https://github.com/jayantvishwakarma"
+                                    target="_blank">github.com/jayantvishwakarma</a>
+                            </div>
+                        </div>
+                        <h3 class="status-title">Current Status</h3>
+                        <div class="contact-status">
+                            <span class="green-dot"></span>
+                            Open for Web Developer Job opportunities
+                        </div>
+                    </div>
+                    <!-- Form liên hệ - Bạn cần một dịch vụ backend như Formspree để nó hoạt động -->
+                    <form class="contact-form glass-card animate-on-scroll" action="https://formspree.io/f/YOUR_FORM_ID"
+                        method="POST">
+                        <h3>Send Me a Message</h3>
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" rows="5" placeholder="Your Message"
+                                required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message <i
+                                class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ====================================================== -->
+    <!-- Footer (MỚI) -->
+    <!-- ====================================================== -->
+
+    <footer class="main-footer">
+        <div class="container footer-container">
+            <!-- Cột 1: Giới thiệu -->
+            <div class="footer-column footer-about">
+                <p>A passionate Web Developer dedicated to building beautiful and useful applications.</p>
+            </div>
+
+            <!-- Cột 2: Quick Links -->
+            <div class="footer-column footer-links">
+                <h4 class="footer-title">Quick Links</h4>
+                <ul>
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="assets/resume.pdf" download>Resume</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Cột 3: Connect with Me -->
+            <div class="footer-column footer-connect">
+                <h4 class="footer-title">Connect with Me</h4>
+                <ul>
+                    <li><a href="https://github.com/jayantvishwakarma" target="_blank"><i class="fab fa-github"></i>
+                            GitHub</a>
+                    </li>
+                    <li><a href="https://linkedin.com/in/jayant-vishwakarma" target="_blank"><i
+                                class="fab fa-linkedin-in"></i>
+                            LinkedIn</a></li>
+                    <li><a href="mailto:vishwakarmajayant0@gmail.com"><i class="fas fa-envelope"></i> Email</a></li>
+                </ul>
+            </div>
         </div>
-        <div class="skill">
-          <div class="skill-img">
-            <img src="./images/icons/javascript.png" alt="" />
-          </div>
-          <div class="skill-heading">JAVASCRIPT</div>
-          <div class="skill-detail">
-            COMFORTABLE WITH OBJECT ORIENTED PROGRAMMING, MAKING APIs USING
-            EXPRESSJS
-          </div>
+
+        <!-- Dòng Copyright ở dưới cùng -->
+        <div class="footer-copyright">
+            <div class="container">
+                <p>Copyright © <span id="currentYear"></span> Jayant Vishwakamra. All rights reserved.</p>
+                <p>Last updated: <b> September 7th 2025</b></p>
+            </div>
         </div>
-        <div class="skill">
-          <div class="skill-img">
-            <img src="./images/icons/React.png" alt="" />
-          </div>
-          <div class="skill-heading">REACT</div>
-          <div class="skill-detail">
-            COMFORTABLE WITH REACT HOOKS AND LIBRARIES
-          </div>
-        </div>
-        <div class="skill">
-          <div class="skill-img">
-            <img class="mongo" src="./images/icons/tool.png" alt="" />
-          </div>
-          <div class="skill-heading">TOOLS</div>
-          <div class="skill-detail">
-            COMFORTABLE WITH CREATING AND MODIFYING SCHEMAS USING GRAPHICS
-            DESIGNS
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="projects">
-      <h1 class="section-heading">Projects</h1>
-      <div class="project">
-        <h2 class="project-heading">Game Manage Matches</h2>
-        <div class="project-img">
-          <img src="./images/other/project3.png" alt="" />
-        </div>
-        <div class="project-description">
-          <p>
-            Game Manage Match is a one-stop solution for Gamers,
-            providing access to live streaming, solved
-            Gamers problems and more. Built this website in 2 weeks
-            using HTML ,CSS ,JS . Before this I have developed a responsive
-            and production website which is publically available to use. to The
-            website is aimed at helping their fellow gamers succeed. With a
-            user-friendly interface and a comprehensive collection of resources.
-          </p>
-          <a href="https://developerjayant.me/Gamics-Manage-Matches/" class="black-btn">Visit</a>
-        </div>
-      </div>
-      <div class="project">
-        <h2 class="project-heading">PERSONAL PORTFOLIO</h2>
-        <div class="project-img">
-          <img src="./images/other/project1.png" alt="" />
-        </div>
-        <div class="project-description">
-          <p>
-            I built this website in 1 months for personal portfolio. But this is not minor from any angle. This was my first
-            introduction frontend and  can work
-            together . There are small bugs in this project and it is
-            also responsive. Maybe in future I will complete this project
-            and deploy it.
-          </p>
-          <a href="#" class="black-btn">Source Code</a>
-        </div>
-      </div>
-    </section>
-    <section id="contact">
-      <h2 class="contact-heading">Get in touch</h2>
-      <a href="mailto:vishwakarmajayant0@gmail.com">
-        <h1 class="mail">vishwakarmajayant0@gmail.com</h1>
-      </a>
-      <footer>
-        <h6 class="end-note">Made with 💙 by Jayant Vishwakarma</h6>
-        <a
-          href="#"
-      
-          class="source-code"
-        >
-          <img src="./images/icons/github.svg" alt="" />
-          <h6>Source Code</h6>
-        </a>
-      </footer>
-    </section>
-  </body>
+    </footer>
+
+    <audio id="audio-source"></audio>
+    <script src="js/playlist.js"></script>
+    <script src="js/new-version.js"></script>
+</body>
+
 </html>

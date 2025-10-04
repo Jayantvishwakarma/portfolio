@@ -1,0 +1,172 @@
+       .project-card-image {
+            max-width: 150px;
+            /* Kích thước logo trên mobile */
+            /* margin-bottom: 1rem; Khoảng cách với text khi ở dạng cột (nếu ảnh ở trên) */
+            /* Nếu ảnh ở bên, margin-bottom không cần thiết khi flex-direction: column */
+            display: block;
+            /* Loại bỏ khoảng trắng thừa nếu là ảnh inline */
+            margin-left: auto;
+            /* Căn giữa ảnh trên mobile nếu text-align:center cho div cha */
+            margin-right: auto;
+        }
+
+        .featured-projects h2 {
+            text-align: center;
+            color: #fff;
+            margin-bottom: 2rem;
+        }
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1.5rem;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        .project-card {
+            background-color: white;
+
+            border-radius: 6px;
+            padding: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 0.75rem;
+        }
+
+        .project-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: #58a6ff;
+            /* Màu tiêu đề */
+        }
+
+        .external-link-icon svg {
+            width: 16px;
+            height: 16px;
+            fill: #8b949e;
+        }
+
+        .project-description {
+            font-size: 0.875rem;
+            color: #8b949e;
+            margin-bottom: 1rem;
+            flex-grow: 1;
+            /* Để description chiếm không gian còn lại */
+            line-height: 1.5;
+        }
+
+        .card-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.875rem;
+            color: #8b949e;
+        }
+
+        .project-language {
+            display: flex;
+            align-items: center;
+        }
+
+        .language-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            margin-right: 6px;
+        }
+
+        .language-dot.ruby {
+            background-color: #701516;
+        }
+
+        .language-dot.css {
+            background-color: #563d7c;
+        }
+
+        .language-dot.html {
+            background-color: #e34c26;
+        }
+
+        .language-dot.javascript {
+            background-color: #f1e05a;
+        }
+
+        .language-dot.unknown, .language-dot.jupyter-notebook {
+            background-color: #ccc;
+        }
+
+        .language-dot.php {
+            background-color: #777BB4;
+        }
+
+        .language-dot.dart {
+            background-color: #00B4AB;
+        }
+
+        .language-dot.java {
+            background-color: #b07219;
+        }
+
+        .language-dot.nodejs {
+            background-color: #339933;
+        }
+
+        .language-dot.ejs {
+            background-color: #a91e50;
+        }
+
+        /* Thêm các ngôn ngữ/công nghệ khác nếu cần */
+        .language-dot.python {
+            background-color: #3572A5;
+            /* Xanh dương của Python */
+        }
+
+        .language-dot.csharp {
+            /* Cho C# */
+            background-color: #178600;
+            /* Xanh lá cây đậm */
+        }
+
+        .language-dot.swift {
+            background-color: #FA7343;
+            /* Cam của Swift */
+        }
+
+        .language-dot.kotlin {
+            background-color: #7F52FF;
+            /* Tím của Kotlin */
+        }
+
+        .language-dot.go {
+            background-color: #00ADD8;
+            /* Xanh da trời của Go */
+        }
+
+        .language-dot.typescript {
+            background-color: #3178c6;
+            /* Xanh dương của TypeScript */
+        }
+
+        .project-stats span {
+            margin-left: 1rem;
+        }
+
+        .project-stats .stars::before {
+            content: '⭐';
+            margin-right: 4px;
+        }
+
+        /* Hoặc dùng SVG icon */
+        .project-stats .forks::before {
+            content: '🍴';
+            margin-right: 4px;
+        }
